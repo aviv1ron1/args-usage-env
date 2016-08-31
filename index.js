@@ -18,8 +18,7 @@ function toBool(x) {
     return x.toLowerCase() == "true";
 }
 
-module.exports = function(configFileName) {
-    var config = require("./" + configFileName);
+module.exports = function(config) {
 
     var printUsage = function() {
         console.log(usage(config));
