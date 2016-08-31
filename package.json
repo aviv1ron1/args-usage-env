@@ -1,24 +1,28 @@
 {
-  "name": "args-usage-env",
-  "version": "0.0.1",
-  "description": "parse process arguments, display usage and take environment variables if exist",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "aviv ron <aviv1ron1@gmail.com>",
-  "keywords": [
-    "args",
-    "arguments",
-    "usage",
-    "command",
-    "arg",
-    "environment",
-    "variables"
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "command-line-args": "^3.0.1",
-    "command-line-usage": "^3.0.3"
-  }
+    "name": "args-usage-env",
+    "version": "0.0.1",
+    "description": "parse process arguments, display usage and take environment variables if exist",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "aviv ron <aviv1ron1@gmail.com>",
+    "keywords": [
+        "args",
+        "arguments",
+        "usage",
+        "command",
+        "arg",
+        "environment",
+        "variables"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aviv1ron1/args-usage-env"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "command-line-args": "^3.0.1",
+        "command-line-usage": "^3.0.3"
+    }
 }
