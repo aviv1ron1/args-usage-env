@@ -25,7 +25,17 @@ module.exports = function(config) {
         process.exit(1);
     }
 
-    config[1].optionList.forEach((opt) => {
+    var optionsSection;
+    var options;
+
+    for (var i = 0; i < config.length; i++) {
+        if (config[i].optionList) {
+            optionsSection = config[i];
+            break;
+        }
+    }
+
+    optionsSection.optionList.forEach((opt) => {
         if (opt.typeLabel) {
             if (opt.typeLabel == "Flag") {
                 opt.type = String
@@ -45,10 +55,8 @@ module.exports = function(config) {
         }
     });
 
-    var options;
-
     try {
-        options = commandLineArgs(config[1].optionList);
+        options = commandLineArgs(optionsSection.optionList);
     } catch (err) {
         printUsage();
     }
@@ -67,7 +75,7 @@ module.exports = function(config) {
         printUsage();
     }
 
-    config[1].optionList.forEach((opt) => {
+    optionsSection.optionList.forEach((opt) => {
         if (opt.typeLabel) {
             if (opt.typeLabel == "Flag") {
                 if (!isUndef(options[opt.name])) {
