@@ -1,0 +1,28 @@
+[
+{
+    "header": "geolocation rest api",
+    "content": "get asn or country geo location for ip addresses. uses maxmind db."
+},
+{
+    "header": "Options",
+    "optionList": [
+    {
+        "name": "help",
+        "alias": "h",
+        "typeLabel": "Boolean",
+        "description": "Print this usage guide."
+    },
+    {
+        "name": "testnumber",
+        "alias": "p",
+        "typeLabel": "Number",
+        "description": "the port used by the web server",
+        "defaultValue": 8080
+    },
+    {
+        "name": "teststring",
+        "typeLabel": "String",
+        "description": "url to download new versions of the maxmind geolite2 asn db",
+        "defaultValue": "default1"
+    }]
+}]

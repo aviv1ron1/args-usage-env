@@ -28,6 +28,3 @@ node_modules
 
 *.sublime-*
 
-test.js
-test.json
-

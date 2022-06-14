@@ -4,5 +4,5 @@ Makefile
 
 *.sublime-*
 
-test.js
+*.test.js
 test.json
